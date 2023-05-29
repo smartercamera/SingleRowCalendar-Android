@@ -364,4 +364,8 @@ class SingleRowCalendar(context: Context, attrs: AttributeSet) : RecyclerView(co
             dateList[scrollPosition]
         )
     }
+
+    fun notifyYearDateChanged() {
+        adapter?.notifyDataSetChanged()
+    }
 }
